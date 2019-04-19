@@ -2,6 +2,12 @@ package edu.dmacc.codedsm.usegit;
 
 public class FizzBuzzServiceImpl implements FizzBuzzService {
 
+    private MapRepository repository;
+
+    public FizzBuzzServiceImpl(MapRepository repository) {
+        this.repository = repository;
+    }
+
 
     @Override
     public Result performFizzBuzzLogic(Submission submission) {
@@ -19,6 +25,8 @@ public class FizzBuzzServiceImpl implements FizzBuzzService {
         Result result = new Result ();
         result.setMessage(message);
         result.setSubmission(submission);
+
+        repository.save(result);
 
         return result;
 
