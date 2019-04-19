@@ -16,7 +16,8 @@ public class Runner {
         FizzBuzzService service = new FizzBuzzServiceImpl(repository);
         SubmissionControl controller = new SubmissionControlImpl(service);
 
-        controller.submit(inputNumber, userName);
+        InputView view = controller.submit(inputNumber, userName);
+        view.render();
 
 
     }
