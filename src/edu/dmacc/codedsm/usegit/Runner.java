@@ -12,6 +12,11 @@ public class Runner {
         System.out.println("Enter a number:");
         Integer inputNumber = in.nextInt();
 
+        FizzBuzzService service = new FizzBuzzServiceImpl();
+        SubmissionControl controller = new SubmissionControlImpl(service);
+
+        controller.submit(inputNumber, userName);
+
 
     }
 
