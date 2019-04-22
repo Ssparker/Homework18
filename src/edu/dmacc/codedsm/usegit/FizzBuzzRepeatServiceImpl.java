@@ -7,11 +7,13 @@ public class FizzBuzzRepeatServiceImpl implements FizzBuzzService {
     private MapRepository repository;
 
     public FizzBuzzRepeatServiceImpl(MapRepository repository) {
+
         this.repository = repository;
     }
 
 
-    @Override
+
+        @Override
     public Result performFizzBuzzLogic(Submission submission) {
 
         String message = "";
@@ -34,5 +36,7 @@ public class FizzBuzzRepeatServiceImpl implements FizzBuzzService {
         return result;
 
     }
+
+
 
 }

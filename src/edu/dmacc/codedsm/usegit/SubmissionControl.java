@@ -4,7 +4,7 @@ import java.util.Objects;
 
 public interface SubmissionControl {
 
-    ConsoleInputView submit (Integer inputNumber, String userName);
+    InputView submit (Integer inputNumber, String userName);
 
         }
 

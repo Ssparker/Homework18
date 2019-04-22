@@ -4,7 +4,7 @@ public class FizzBuzzServiceImpl implements FizzBuzzService {
 
     private MapRepository repository;
 
-    public FizzBuzzServiceImpl(MapRepository repository) {
+    public FizzBuzzServiceImpl(MapRepository repository){
         this.repository = repository;
     }
 
@@ -32,6 +32,8 @@ public class FizzBuzzServiceImpl implements FizzBuzzService {
         return result;
 
         }
+
+
 
 
 }
