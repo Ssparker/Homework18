@@ -9,7 +9,12 @@ public class FizzBuzzRepeatMapRepository implements MapRepository {
 
 
     @Override
+
+    public String toString() {
+        return "FizzBuzzRepeatMapRepository {" + "storage = " + storage + '}';
+    }
     public void save(Result result) {
+        storage.put(1, result);
 
     }
 }
