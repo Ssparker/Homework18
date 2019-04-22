@@ -2,10 +2,10 @@ package edu.dmacc.codedsm.usegit;
 
 public class SubmissionControlImpl implements SubmissionControl {
 
-    private FizzBuzzService service;
+    private FizzBuzzRepeatService service;
 
     public SubmissionControlImpl(FizzBuzzService service) { // constructor
-        this.service = service;
+        //this.service = service;
     }
 
     @Override
